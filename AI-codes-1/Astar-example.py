@@ -82,10 +82,10 @@ class A_Star_Solver:
 
 # Calling all the existing stuffs
 if __name__ == "__main__":
-    start1 = "vropAo"
-    goal1 = "Apoorv"
+    src = "vropAo"
+    dst = "Apoorv"
     print("Starting....")
-    a = A_Star_Solver(start1, goal1)
-    a.Solve()
-    for i in range(len(a.path)):
-        print("{0}) {1}".format(i, a.path[i]))
+    Astar_ = A_Star_Solver(src, dst)
+    Astar_.Solve()
+    for i in range(len(Astar_.path)):
+        print("{0}) {1}".format(i, Astar_.path[i]))
